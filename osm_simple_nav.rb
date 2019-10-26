@@ -107,7 +107,6 @@ class OSMSimpleNav
 		# perform the operation
 	    case @operation
 			when '--export'
-				test =
 	      	@visual_graph.export_graphviz(@out_file)
 	      	return
 	      else

@@ -81,8 +81,38 @@ class GraphLoader
 		gv = Nokogiri::XML(File.open(@filename))
 
 		# aux data structures
+		hash_of_edges_for_process = {}
+
 		hash_of_vertices = {}
+		hash_of_visual_vertices = {}
 		list_of_edges = []
+		list_of_visual_edges = []
+
+		ways = gv.xpath("//way")
+
+		ways.length.times do |way_index|
+			nd = ways[way_index].css('nd')
+			highway = ways[way_index].css("tag[k='highway']")[0]
+			maxSpeedAtrr = ways[way_index].css("tag[k='maxspeed']")[0]
+
+			if highway != nil
+				v_access = highway["v"]
+				if @highway_attributes.include?(v_access)
+					(nd.length - 1).times do |nd_index|
+						vid_from = nd[nd_index]["ref"]
+						vid_to = nd[nd_index + 1]["ref"]
+
+						if !hash_of_edges_for_process.has_key?(vid_from)
+							hash_of_edges_for_process[vid_from] = vid_from
+						end
+
+						if !hash_of_edges_for_process.has_key?(vid_to)
+							hash_of_edges_for_process[vid_to] = vid_to
+						end
+					end
+				end
+			end
+		end
 
 		# process vertices
 		ProcessLogger.log("Processing vertices")
@@ -92,9 +122,16 @@ class GraphLoader
 			node = nodes[node_index]
 			vid = node["id"]
 
-			v = Vertex.new(vid) unless hash_of_vertices.has_key?(vid)
-			ProcessLogger.log("\t Vertex #{vid} loaded")
-			hash_of_vertices[vid] = v
+			if hash_of_edges_for_process.has_key?(vid)
+				lat = node["lat"].to_f
+				lon = node["lon"].to_f
+
+				v = Vertex.new(vid) unless hash_of_vertices.has_key?(vid)
+				ProcessLogger.log("\t Vertex #{vid} loaded")
+				hash_of_vertices[vid] = v
+				hash_of_visual_vertices[vid] = VisualVertex.new(vid, v, lat, lon, lat, lon)
+				ProcessLogger.log("\t Visual vertex #{vid} in ")
+			end
 		end
 
 		ways = gv.xpath("//way")
@@ -118,6 +155,7 @@ class GraphLoader
 
 						e = Edge.new(vid_from, vid_to, maxSpeed, "ano")
 						list_of_edges << e
+						list_of_visual_edges << VisualEdge.new(e, hash_of_visual_vertices[vid_from], hash_of_visual_vertices[vid_to])
 					end
 				end
 			end
@@ -125,6 +163,16 @@ class GraphLoader
 
 		g = Graph.new(hash_of_vertices, list_of_edges)
 
-		return g
+		# Create VisualGraph instance
+		bounds = {}
+		boundsXml = gv.xpath("//bounds")
+		bounds[:minlon] = boundsXml[0]["minlon"]
+		bounds[:minlat] = boundsXml[0]["minlat"]
+		bounds[:maxlon] = boundsXml[0]["maxlon"]
+		bounds[:maxlat] = boundsXml[0]["maxlat"]
+
+		vg = VisualGraph.new(g, hash_of_visual_vertices, list_of_visual_edges, bounds)
+
+		return g, vg
 	end
 end

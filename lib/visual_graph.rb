@@ -37,7 +37,7 @@ class VisualGraph
     # append all vertices
     @visual_vertices.each { |k,v|
     	graph_viz_output.add_nodes( v.id , :shape => 'point', 
-                                         :comment => "#{v.lat},#{v.lon}!", 
+                                         :comment => "#{v.lat},#{v.lon}!!",
                                          :pos => "#{v.y},#{v.x}!")
 	  }
 

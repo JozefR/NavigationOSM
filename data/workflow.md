@@ -9,3 +9,9 @@ Pozor: tag Highway může mít několik verzí - nahrávejte pouze ty, které d�
 3. Zkonstruovat neorientovaný graf
 4. Uložte také informaci o délce každého segmentu ulice (pozor, jedná se o geografickou vzdálenost)
 5. a povolené rychlosti pokud informace o povolené rychlosti nebude dostupná, pak ji nastavte jako 50 km/h
+
+Maximalna komponenta grafu
+
+1. Vytiahnut maximalnu komponentu grafu - komponenta je vsetko aj jeden vrchol
+   ide o to vytiahnut najvacsiu suvislu cize najviac vrcholov spojenych hranami.
+

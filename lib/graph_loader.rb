@@ -175,4 +175,5 @@ class GraphLoader
 
 		return g, vg
 	end
+
 end

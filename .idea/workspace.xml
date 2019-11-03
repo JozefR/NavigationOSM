@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ea8f59f-864b-429a-b854-a0fe06000d5a" name="Default Changelist" comment="xml">
-      <change afterPath="$PROJECT_DIR$/lib/graph_comp_finder.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/workflow.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/workflow.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/zizkov (1).osm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/zizkov (1).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstTest.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/graph_loader.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/graph_loader.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/osm_simple_nav.rb" beforeDir="false" afterPath="$PROJECT_DIR$/osm_simple_nav.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testTest.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ucl.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +28,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lib/graph_comp_finder.rb" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1SZK4Yz7ZYJcbMLuDW0qrEMf8Ge" />
   <component name="ProjectViewState">
@@ -77,7 +81,7 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/osm_simple_nav.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--load data/near_ucl.osm --export ucl.pdf" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--load-comp data/near_ucl.osm --export results/near_ucl.pdf" />
       <method v="2" />
     </configuration>
   </component>
@@ -102,6 +106,9 @@
       <workItem from="1572006179661" duration="20953000" />
       <workItem from="1572069953902" duration="16201000" />
       <workItem from="1572176145214" duration="6316000" />
+      <workItem from="1572202081745" duration="2197000" />
+      <workItem from="1572783755837" duration="6732000" />
+      <workItem from="1572804159928" duration="147000" />
     </task>
     <task id="LOCAL-00001" summary="xml">
       <created>1572070144205</created>
@@ -141,10 +148,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" width="800" height="717" key="#Intentions/0.0.1440.900@0.0.1440.900" timestamp="1571834853695" />
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1572201692739">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1572804307310">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1572201692739" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1572804307310" />
+    <state x="365" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1572202675249" />
     <state x="442" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1572013640009">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -153,54 +161,54 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="502" y="210" key="#xdebugger.XInspectDialog/0.0.1440.900@0.0.1440.900" timestamp="1572077554075" />
-    <state width="1303" height="466" key="DebuggerActiveHint" timestamp="1572200494886">
+    <state width="1317" height="466" key="DebuggerActiveHint" timestamp="1572800509020">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1303" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1572200494886" />
+    <state width="1317" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1572800509020" />
     <state x="474" y="222" key="EnvironmentVariablesDialog" timestamp="1571830393125">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1571830393125" />
-    <state width="1440" height="260" key="GridCell.Tab.0.bottom" timestamp="1572201961099">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="685" height="872" key="GridCell.Tab.0.bottom" timestamp="1572804079813">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="778" height="850" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1572201694710" />
-    <state width="1440" height="260" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1572201961099" />
-    <state width="1440" height="260" key="GridCell.Tab.0.center" timestamp="1572201961099">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="685" height="872" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1572804079813" />
+    <state width="1398" height="238" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1572202677195" />
+    <state width="685" height="872" key="GridCell.Tab.0.center" timestamp="1572804079812">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="778" height="850" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1572201694709" />
-    <state width="1440" height="260" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1572201961099" />
-    <state width="1440" height="260" key="GridCell.Tab.0.left" timestamp="1572201961099">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="685" height="872" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1572804079812" />
+    <state width="1398" height="238" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1572202677195" />
+    <state width="685" height="872" key="GridCell.Tab.0.left" timestamp="1572804079812">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="778" height="850" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1572201694708" />
-    <state width="1440" height="260" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1572201961099" />
-    <state width="1440" height="260" key="GridCell.Tab.0.right" timestamp="1572201961099">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="685" height="872" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1572804079812" />
+    <state width="1398" height="238" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1572202677194" />
+    <state width="685" height="872" key="GridCell.Tab.0.right" timestamp="1572804079813">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="778" height="850" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1572201694710" />
-    <state width="1440" height="260" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1572201961099" />
-    <state width="778" height="850" key="GridCell.Tab.1.bottom" timestamp="1572201961082">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="685" height="872" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1572804079813" />
+    <state width="1398" height="238" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1572202677195" />
+    <state width="685" height="872" key="GridCell.Tab.1.bottom" timestamp="1572804079815">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="778" height="850" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1572201694711" />
-    <state width="778" height="850" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1572201961082" />
-    <state width="778" height="850" key="GridCell.Tab.1.center" timestamp="1572201961081">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="685" height="872" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1572804079815" />
+    <state width="755" height="784" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1572202663303" />
+    <state width="685" height="872" key="GridCell.Tab.1.center" timestamp="1572804079814">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="778" height="850" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1572201694711" />
-    <state width="778" height="850" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1572201961081" />
-    <state width="778" height="850" key="GridCell.Tab.1.left" timestamp="1572201961081">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="685" height="872" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1572804079814" />
+    <state width="755" height="784" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1572202663303" />
+    <state width="685" height="872" key="GridCell.Tab.1.left" timestamp="1572804079813">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="778" height="850" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1572201694710" />
-    <state width="778" height="850" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1572201961081" />
-    <state width="778" height="850" key="GridCell.Tab.1.right" timestamp="1572201961082">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="685" height="872" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1572804079813" />
+    <state width="755" height="784" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1572202663303" />
+    <state width="685" height="872" key="GridCell.Tab.1.right" timestamp="1572804079814">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="778" height="850" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1572201694711" />
-    <state width="778" height="850" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1572201961082" />
+    <state width="685" height="872" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1572804079814" />
+    <state width="755" height="784" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1572202663303" />
     <state x="335" y="168" key="RollbackChangesDialog" timestamp="1572086607201">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -209,18 +217,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1572005967516" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1572072361297">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1572802617129">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1572072361297" />
+    <state width="500" height="445" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1572802617129" />
     <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1572070256726">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1572070256726" />
-    <state width="809" height="450" key="XDebugger.FullValuePopup" timestamp="1572078942963">
+    <state width="809" height="450" key="XDebugger.FullValuePopup" timestamp="1572800273509">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="809" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1572078942963" />
+    <state width="809" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1572800273509" />
     <state width="809" height="450" key="XDebugger.FullValuePopup/0.23.1440.877@0.23.1440.877" timestamp="1572028135517" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1572070060735">
       <screen x="0" y="0" width="1440" height="900" />
@@ -238,10 +246,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="600" height="424" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1572074464319" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1572074716166">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1572798703474">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1572074716166" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1572798703474" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -262,6 +270,14 @@
           </properties>
           <option name="timeStamp" value="147" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/graph_loader.rb</url>
+          <line>166</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -271,6 +287,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/gal_template_project@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1572201698796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
+    <SUITE FILE_PATH="coverage/gal_template_project@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1572803273958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
   </component>
 </project>

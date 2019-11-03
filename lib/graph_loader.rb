@@ -77,26 +77,24 @@ class GraphLoader
 	#
 	# @return [+Graph+, +VisualGraph+]
 	def load_graph()
-		# TODO
+		# Load osm file
 		gv = Nokogiri::XML(File.open(@filename))
 
-		# aux data structures
+		# edges from way
 		hash_of_edges_for_process = {}
-
-		hash_of_vertices = {}
-		hash_of_visual_vertices = {}
-		list_of_edges = []
-		list_of_visual_edges = []
 
 		ways = gv.xpath("//way")
 
+		# load edges from way to filter only those nodes that we need for process later
+		# when we are going to create vertices and edges
 		ways.length.times do |way_index|
 			nd = ways[way_index].css('nd')
+			# we need only those ways with highway atrr
 			highway = ways[way_index].css("tag[k='highway']")[0]
-			maxSpeedAtrr = ways[way_index].css("tag[k='maxspeed']")[0]
 
 			if highway != nil
 				v_access = highway["v"]
+				# if the type of highway is specified in highway attributes.
 				if @highway_attributes.include?(v_access)
 					(nd.length - 1).times do |nd_index|
 						vid_from = nd[nd_index]["ref"]
@@ -114,6 +112,9 @@ class GraphLoader
 			end
 		end
 
+		hash_of_vertices = {}
+		hash_of_visual_vertices = {}
+
 		# process vertices
 		ProcessLogger.log("Processing vertices")
 		nodes = gv.xpath("//node")
@@ -122,6 +123,7 @@ class GraphLoader
 			node = nodes[node_index]
 			vid = node["id"]
 
+			# if the node is in the way
 			if hash_of_edges_for_process.has_key?(vid)
 				lat = node["lat"].to_f
 				lon = node["lon"].to_f
@@ -134,12 +136,13 @@ class GraphLoader
 			end
 		end
 
-		ways = gv.xpath("//way")
+		list_of_edges = []
+		list_of_visual_edges = []
 
+		# process edges
 		ways.length.times do |way_index|
 			nd = ways[way_index].css('nd')
 			highway = ways[way_index].css("tag[k='highway']")[0]
-			maxSpeedAtrr = ways[way_index].css("tag[k='maxspeed']")[0]
 
 			if highway != nil
 				v_access = highway["v"]
@@ -148,12 +151,25 @@ class GraphLoader
 						vid_from = nd[nd_index]["ref"]
 						vid_to = nd[nd_index + 1]["ref"]
 
+						maxSpeedTag = ways[way_index].css("tag[k='maxspeed']")[0]
 						maxSpeed = 50
-						if maxSpeedAtrr != nil
-							maxSpeed = maxSpeedAtrr["v"]
+						# if there is no stored value for max speed set default
+						if maxSpeedTag != nil
+							maxSpeed = maxSpeedTag["v"]
 						end
 
-						e = Edge.new(vid_from, vid_to, maxSpeed, "ano")
+						# if the way is oneway store true otherwise false
+						oneWayTag = ways[way_index].css("tag[k='oneway']")[0]
+						oneWay = false
+
+						if oneWayTag != nil
+							oneWayValue = oneWayTag["v"]
+							if oneWayValue == "yes"
+								oneWay = true
+							end
+						end
+
+						e = Edge.new(vid_from, vid_to, maxSpeed, oneWay)
 						list_of_edges << e
 						list_of_visual_edges << VisualEdge.new(e, hash_of_visual_vertices[vid_from], hash_of_visual_vertices[vid_to])
 					end
@@ -161,9 +177,9 @@ class GraphLoader
 			end
 		end
 
+		# Create instances of Graph and VisualGraph
 		g = Graph.new(hash_of_vertices, list_of_edges)
 
-		# Create VisualGraph instance
 		bounds = {}
 		boundsXml = gv.xpath("//bounds")
 		bounds[:minlon] = boundsXml[0]["minlon"]

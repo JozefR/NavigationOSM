@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4ea8f59f-864b-429a-b854-a0fe06000d5a" name="Default Changelist" comment="xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/zizkov (1).osm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/zizkov (1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstTest.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/graph_loader.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/graph_loader.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/graph_comp_finder.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/graph_comp_finder.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testTest.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ucl.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osm_simple_nav.rb" beforeDir="false" afterPath="$PROJECT_DIR$/osm_simple_nav.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/near_ucl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results/near_ucl.pdf" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +63,18 @@
       <command value="git" />
     </option>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="osm_simple_nav" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="gal_template_project" />
@@ -108,7 +118,8 @@
       <workItem from="1572176145214" duration="6316000" />
       <workItem from="1572202081745" duration="2197000" />
       <workItem from="1572783755837" duration="6732000" />
-      <workItem from="1572804159928" duration="147000" />
+      <workItem from="1572804159928" duration="2497000" />
+      <workItem from="1575486901609" duration="166000" />
     </task>
     <task id="LOCAL-00001" summary="xml">
       <created>1572070144205</created>
@@ -161,53 +172,53 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="502" y="210" key="#xdebugger.XInspectDialog/0.0.1440.900@0.0.1440.900" timestamp="1572077554075" />
-    <state width="1317" height="466" key="DebuggerActiveHint" timestamp="1572800509020">
+    <state width="1317" height="466" key="DebuggerActiveHint" timestamp="1572805589116">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1317" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1572800509020" />
+    <state width="1317" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1572805589116" />
     <state x="474" y="222" key="EnvironmentVariablesDialog" timestamp="1571830393125">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1571830393125" />
-    <state width="685" height="872" key="GridCell.Tab.0.bottom" timestamp="1572804079813">
+    <state width="664" height="829" key="GridCell.Tab.0.bottom" timestamp="1572806701414">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="685" height="872" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1572804079813" />
+    <state width="664" height="829" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1572806701414" />
     <state width="1398" height="238" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1572202677195" />
-    <state width="685" height="872" key="GridCell.Tab.0.center" timestamp="1572804079812">
+    <state width="664" height="829" key="GridCell.Tab.0.center" timestamp="1572806701413">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="685" height="872" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1572804079812" />
+    <state width="664" height="829" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1572806701413" />
     <state width="1398" height="238" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1572202677195" />
-    <state width="685" height="872" key="GridCell.Tab.0.left" timestamp="1572804079812">
+    <state width="664" height="829" key="GridCell.Tab.0.left" timestamp="1572806701412">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="685" height="872" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1572804079812" />
+    <state width="664" height="829" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1572806701412" />
     <state width="1398" height="238" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1572202677194" />
-    <state width="685" height="872" key="GridCell.Tab.0.right" timestamp="1572804079813">
+    <state width="664" height="829" key="GridCell.Tab.0.right" timestamp="1572806701413">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="685" height="872" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1572804079813" />
+    <state width="664" height="829" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1572806701413" />
     <state width="1398" height="238" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1572202677195" />
-    <state width="685" height="872" key="GridCell.Tab.1.bottom" timestamp="1572804079815">
+    <state width="664" height="829" key="GridCell.Tab.1.bottom" timestamp="1572806701415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="685" height="872" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1572804079815" />
+    <state width="664" height="829" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1572806701415" />
     <state width="755" height="784" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1572202663303" />
-    <state width="685" height="872" key="GridCell.Tab.1.center" timestamp="1572804079814">
+    <state width="664" height="829" key="GridCell.Tab.1.center" timestamp="1572806701415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="685" height="872" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1572804079814" />
+    <state width="664" height="829" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1572806701415" />
     <state width="755" height="784" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1572202663303" />
-    <state width="685" height="872" key="GridCell.Tab.1.left" timestamp="1572804079813">
+    <state width="664" height="829" key="GridCell.Tab.1.left" timestamp="1572806701414">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="685" height="872" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1572804079813" />
+    <state width="664" height="829" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1572806701414" />
     <state width="755" height="784" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1572202663303" />
-    <state width="685" height="872" key="GridCell.Tab.1.right" timestamp="1572804079814">
+    <state width="664" height="829" key="GridCell.Tab.1.right" timestamp="1572806701415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="685" height="872" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1572804079814" />
+    <state width="664" height="829" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1572806701415" />
     <state width="755" height="784" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1572202663303" />
     <state x="335" y="168" key="RollbackChangesDialog" timestamp="1572086607201">
       <screen x="0" y="0" width="1440" height="900" />
@@ -252,34 +263,6 @@
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1572798703474" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/graph_comp_finder.rb</url>
-          <line>59</line>
-          <properties myBlockOrdinal="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="125" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/osm_simple_nav.rb</url>
-          <line>93</line>
-          <properties myBlockOrdinal="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/graph_loader.rb</url>
-          <line>166</line>
-          <properties myBlockOrdinal="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="154" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="RubyRunConfigurationType">
         <watch expression="vg" language="ruby" />
@@ -287,6 +270,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/gal_template_project@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1572803273958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
+    <SUITE FILE_PATH="coverage/gal_template_project@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1572805917518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
   </component>
 </project>

@@ -91,7 +91,6 @@ class OSMSimpleNav
 	def load_comp
 		comp_loader = ComponentFinder.new()
 		@graph, @visual_graph = comp_loader.get_comp(@graph, @visual_graph)
-		test = 34
 	end
 
 	# Run navigation according to arguments from command line

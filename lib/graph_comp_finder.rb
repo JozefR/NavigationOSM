@@ -99,4 +99,6 @@ class ComponentFinder
 
     components.push(hash_of_vertices)
   end
+
+
 end

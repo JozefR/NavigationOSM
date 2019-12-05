@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ea8f59f-864b-429a-b854-a0fe06000d5a" name="Default Changelist" comment="xml">
+    <list default="true" id="4ea8f59f-864b-429a-b854-a0fe06000d5a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/graph_comp_finder.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/graph_comp_finder.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/visual_graph.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/visual_graph.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/logfile.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/osm_simple_nav.rb" beforeDir="false" afterPath="$PROJECT_DIR$/osm_simple_nav.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/near_ucl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/results/near_ucl.pdf" afterDir="false" />
@@ -28,6 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lib/visual_graph.rb" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/lib/graph_comp_finder.rb" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1SZK4Yz7ZYJcbMLuDW0qrEMf8Ge" />
@@ -40,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/trllo_jakub_1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -91,7 +93,7 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/osm_simple_nav.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--load-comp data/near_ucl.osm --export results/near_ucl.pdf" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--load-comp data/near_ucl.osm --show-nodes" />
       <method v="2" />
     </configuration>
   </component>
@@ -120,6 +122,7 @@
       <workItem from="1572783755837" duration="6732000" />
       <workItem from="1572804159928" duration="2497000" />
       <workItem from="1575486901609" duration="166000" />
+      <workItem from="1575487287402" duration="5103000" />
     </task>
     <task id="LOCAL-00001" summary="xml">
       <created>1572070144205</created>
@@ -128,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572070144205</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add comments">
+      <created>1575487372877</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575487372877</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +162,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="xml" />
+    <MESSAGE value="add comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" width="800" height="717" key="#Intentions" timestamp="1571834853695">
@@ -263,6 +274,18 @@
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1572798703474" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/visual_graph.rb</url>
+          <line>27</line>
+          <properties a="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="RubyRunConfigurationType">
         <watch expression="vg" language="ruby" />
@@ -270,6 +293,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/gal_template_project@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1572805917518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
+    <SUITE FILE_PATH="coverage/gal_template_project@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1575527042377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
   </component>
 </project>

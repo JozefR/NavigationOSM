@@ -9,7 +9,7 @@ class OSMSimpleNav
 	def initialize
 		# register
 		@load_cmds_list = ['--load', '--load-comp']
-		@actions_list = ['--export']
+		@actions_list = ['--export', '--show-nodes']
 
 		@usage_text = <<-END.gsub(/^ {6}/, '')
 	  	Usage:\truby osm_simple_nav.rb <load_command> <input.IN> <action_command> <output.OUT> 
@@ -84,8 +84,6 @@ class OSMSimpleNav
 	def import_graph
 		graph_loader = GraphLoader.new(@map_file, @highway_attributes)
 		@graph, @visual_graph = graph_loader.load_graph_viz
-
-
 	end
 
 	def load_comp
@@ -93,7 +91,6 @@ class OSMSimpleNav
 		@graph, @visual_graph = comp_loader.get_comp(@graph, @visual_graph)
 	end
 
-	# Run navigation according to arguments from command line
 	def run
 		# prepare log and read command line arguments
 		prepare_log
@@ -116,10 +113,17 @@ class OSMSimpleNav
 			load_comp
 		end
 
+		if @load_cmd == '--show-nodes'
+			print_nodes
+		end
+
 		# perform the operation
 		case @operation
 		when '--export'
 			@visual_graph.export_graphviz(@out_file)
+			return
+		when '--show-nodes'
+			@visual_graph.print_nodes
 			return
 		else
 			usage

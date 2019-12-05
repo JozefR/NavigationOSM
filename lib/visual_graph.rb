@@ -50,4 +50,17 @@ class VisualGraph
     format_sym = export_filename.slice(export_filename.rindex('.')+1,export_filename.size).to_sym
     graph_viz_output.output( format_sym => export_filename )
   end
+
+  def print_nodes
+    nodes = @visual_vertices
+
+    nodes.each do |key, value|
+      id = value.id
+      lat = value.lat
+      lon = value.lon
+
+      p String(id) + ": " + String(lat) + ", " + String(lon)
+    end
+
+  end
 end

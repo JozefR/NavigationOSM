@@ -28,7 +28,7 @@ class OSMSimpleNav
 	# Command line handling
 	def process_args
 		# not enough parameters - at least load command, input file and action command must be given
-		unless ARGV.length >= 3
+		if ARGV.length < 4
 			puts "Not enough parameters!"
 			puts usage
 			exit 1
@@ -41,12 +41,14 @@ class OSMSimpleNav
 			puts usage
 			exit 1
 		end
+
 		@map_file = ARGV.shift
 		unless File.file?(@map_file)
 			puts "File #{@map_file} does not exist!"
 			puts usage
 			exit 1
 		end
+
 		@operation = ARGV.shift
 		unless @actions_list.include?(@operation)
 			puts "Action command not registred!"
@@ -56,6 +58,17 @@ class OSMSimpleNav
 
 		# possibly load other parameters of the action
 		if @operation == '--export'
+
+		end
+		if @operation == '--show-nodes'
+			if ARGV.length == 1
+				/ todo /
+			end
+
+			if ARGV.length == 3
+				@id_start = ARGV.shift
+				@id_end = ARGV.shift
+			end
 		end
 
 		# load output file
@@ -113,9 +126,12 @@ class OSMSimpleNav
 			load_comp
 		end
 
-		if @load_cmd == '--show-nodes'
-			print_nodes
-		end
+		# Z tohoto seznamu si budeme moci přímo vybrat startovní a cílové body, mezi kterými budeme hledat nejkratší cestu.
+		# Ke kontrole bude sloužit speciální spuštění programu, které na mapě zvýrazní body, mezi kterými chceme počítat nejratčí cestu.
+		# ruby osm_simple_nav.rb --load-comp <input_map.IN> --show-nodes <id_start> <id_stop> <exported_map.OUT>
+
+		# 21311324
+		# 21673408
 
 		# perform the operation
 		case @operation
@@ -123,7 +139,12 @@ class OSMSimpleNav
 			@visual_graph.export_graphviz(@out_file)
 			return
 		when '--show-nodes'
-			@visual_graph.print_nodes
+			if @id_start != nil && @id_end != nil
+				@visual_graph.export_graphviz(@out_file, @id_start, @id_end)
+				@visual_graph.print_nodes()
+			else
+				@visual_graph.print_nodes()
+			end
 			return
 		else
 			usage

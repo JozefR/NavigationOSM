@@ -4,6 +4,8 @@ class VisualVertex
   attr_reader :id
   # Corresponding vertex
   attr_reader :vertex
+  # Parent vertex for shortest path
+  attr_reader :parentVertex
   # Lattitude of visual vertex
   attr_reader :lat
   # Longitute of visual vertex
@@ -12,6 +14,10 @@ class VisualVertex
   attr_reader :x
   # Y-axis position of +self+
   attr_reader :y
+  # relaxed path value
+  attr_writer :pathValue
+
+  INFINITY = 99999
 
   # create instance of +self+ by simple storing of all parameters
   def initialize(id, vertex, lat, lon, x, y)
@@ -21,6 +27,8 @@ class VisualVertex
     @lon = lon
     @x = x
     @y = y
+    @parentVertex = nil
+    @pathValue = INFINITY
   end
 end
 

@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ea8f59f-864b-429a-b854-a0fe06000d5a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/osm2graphviz.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gal_template_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gal_template_project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/graph_shortest_path.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/graph_comp_finder.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/graph_comp_finder.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/visual_edge.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/visual_edge.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/visual_graph.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/visual_graph.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/visual_vertex.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/visual_vertex.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osm2graphviz.rb" beforeDir="false" afterPath="$PROJECT_DIR$/osm2graphviz.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +147,7 @@
       <workItem from="1575637090818" duration="2034000" />
       <workItem from="1575641588841" duration="1571000" />
       <workItem from="1575643188454" duration="6014000" />
-      <workItem from="1575708840816" duration="8956000" />
+      <workItem from="1575708840816" duration="19284000" />
     </task>
     <task id="LOCAL-00001" summary="xml">
       <created>1572070144205</created>
@@ -320,11 +323,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/lib/visual_graph.rb</url>
-          <line>132</line>
+          <line>130</line>
           <properties a="-1">
             <option name="block-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/graph_shortest_path.rb</url>
+          <line>40</line>
+          <properties a="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/graph_shortest_path.rb</url>
+          <line>19</line>
+          <properties a="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -335,7 +354,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/gal_template_project@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1575741970210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
+    <SUITE FILE_PATH="coverage/gal_template_project@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1575923540675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
     <SUITE FILE_PATH="coverage/NavigationOSM@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1575649088606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 require_relative 'lib/graph_loader';
 require_relative 'lib/graph_comp_finder';
+require_relative 'lib/graph_shortest_path';
 require_relative 'process_logger';
 
 # Class representing simple navigation based on OpenStreetMap project
@@ -56,10 +57,10 @@ class OSM2graphviz
       exit 1
     end
 
-    @lat_start = ARGV.shift
-    @lon_start = ARGV.shift
-    @lat_end = ARGV.shift
-    @lon_end = ARGV.shift
+    @lat_start = ARGV.shift.to_f
+    @lon_start = ARGV.shift.to_f
+    @lat_end = ARGV.shift.to_f
+    @lon_end = ARGV.shift.to_f
 
     # load output file
     @out_file = ARGV.shift
@@ -92,6 +93,11 @@ class OSM2graphviz
   def load_comp
     comp_loader = ComponentFinder.new()
     @graph, @visual_graph = comp_loader.get_comp(@graph, @visual_graph)
+  end
+
+  def find_shortest_path
+    shortest_path = ShortestPath.new()
+    @visual_graph = shortest_path.get_path(@graph, @visual_graph, @lat_start, @lon_start, @lat_end, @lon_end)
   end
 
   def run
@@ -129,6 +135,7 @@ class OSM2graphviz
     # perform the operation
     case @operation
     when '--midist'
+        find_shortest_path
         @visual_graph.export_graphviz(@out_file, @lat_start, @lon_start, @lat_end, @lon_end)
         @visual_graph.print_nodes()
       return

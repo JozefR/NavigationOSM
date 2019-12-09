@@ -125,8 +125,6 @@ class VisualGraph
       latEnd = lat_end.to_f
       lonEnd = lon_end.to_f
 
-      test1 = edge.v1.lat
-      test2 = edge.v1.lon
       # 50.0865517
       # 14.4625145
       if ((lat_start.to_f == edge.v1.lat and lonStart == edge.v1.lon) or (latEnd == edge.v2.lat and lonEnd == edge.v2.lon))
@@ -135,6 +133,10 @@ class VisualGraph
         graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none')
       end
     }
+
+    # Process dijkstra for starting vertex
+    # After finishing find finish vertex and go throught parent vertices to start
+    
 
     # export to a given format
     format_sym = export_filename.slice(export_filename.rindex('.')+1,export_filename.size).to_sym

@@ -28,7 +28,7 @@ class OSMSimpleNav
 	# Command line handling
 	def process_args
 		# not enough parameters - at least load command, input file and action command must be given
-		if ARGV.length < 4
+		if ARGV.length < 3
 			puts "Not enough parameters!"
 			puts usage
 			exit 1
@@ -140,7 +140,7 @@ class OSMSimpleNav
 			return
 		when '--show-nodes'
 			if @id_start != nil && @id_end != nil
-				@visual_graph.export_graphviz(@out_file, @id_start, @id_end)
+				@visual_graph.export_graphviz1(@out_file, @id_start, @id_end)
 				@visual_graph.print_nodes()
 			else
 				@visual_graph.print_nodes()

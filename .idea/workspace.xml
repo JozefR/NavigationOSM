@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ea8f59f-864b-429a-b854-a0fe06000d5a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/graph_shortest_path.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gal_template_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gal_template_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/graph_comp_finder.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/graph_comp_finder.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/graph_shortest_path.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/graph_shortest_path.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/visual_edge.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/visual_edge.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/visual_graph.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/visual_graph.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/visual_vertex.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/visual_vertex.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/logfile.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/osm2graphviz.rb" beforeDir="false" afterPath="$PROJECT_DIR$/osm2graphviz.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osm_simple_nav.rb" beforeDir="false" afterPath="$PROJECT_DIR$/osm_simple_nav.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +47,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lib/graph_shortest_path.rb" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/osm2graphviz.rb" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/lib/visual_graph.rb" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/lib/graph_comp_finder.rb" root0="FORCE_HIGHLIGHTING" />
@@ -60,7 +62,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/trllo_jakub_1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/osm2graphviz.rb" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -113,7 +115,7 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/osm2graphviz.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--load-comp data/near_ucl.osm --midist 50.0865517 14.4625145 50.0898046 14.4611785 test.pdf" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--load-comp data/near_ucl.osm --midist 50.0865517 14.4625145 50.0869118 14.4609926 data/test.pdf" />
       <method v="2" />
     </configuration>
   </component>
@@ -147,7 +149,10 @@
       <workItem from="1575637090818" duration="2034000" />
       <workItem from="1575641588841" duration="1571000" />
       <workItem from="1575643188454" duration="6014000" />
-      <workItem from="1575708840816" duration="19284000" />
+      <workItem from="1575708840816" duration="19857000" />
+      <workItem from="1576309359141" duration="20776000" />
+      <workItem from="1576520733034" duration="9445000" />
+      <workItem from="1576531075623" duration="3161000" />
     </task>
     <task id="LOCAL-00001" summary="xml">
       <created>1572070144205</created>
@@ -192,158 +197,118 @@
     <option name="LAST_COMMIT_MESSAGE" value="add comments" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="115" width="800" height="717" key="#Intentions" timestamp="1571834853695">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="115" width="800" height="717" key="#Intentions/0.0.1440.900@0.0.1440.900" timestamp="1571834853695" />
-    <state x="191" y="30" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575648930033">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="191" y="30" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1575648930033" />
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1572804307310" />
-    <state x="365" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1572202675249" />
-    <state x="442" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1572013640009">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="442" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1572013640009" />
-    <state x="502" y="210" key="#xdebugger.XInspectDialog" timestamp="1572077554075">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="502" y="210" key="#xdebugger.XInspectDialog/0.0.1440.900@0.0.1440.900" timestamp="1572077554075" />
-    <state width="1171" height="373" key="DebuggerActiveHint" timestamp="1575645453797">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1171" height="373" key="DebuggerActiveHint/0.0.1280.720@0.0.1280.720" timestamp="1575645453797" />
-    <state width="1317" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1572805589116" />
-    <state x="474" y="222" key="EnvironmentVariablesDialog" timestamp="1571830393125">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1571830393125" />
-    <state width="1236" height="260" key="GridCell.Tab.0.bottom" timestamp="1575649103795">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1236" height="260" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1575649103795" />
-    <state width="664" height="829" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1572806701414" />
-    <state width="1398" height="238" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1572202677195" />
-    <state width="1236" height="260" key="GridCell.Tab.0.center" timestamp="1575649103795">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1236" height="260" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1575649103795" />
-    <state width="664" height="829" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1572806701413" />
-    <state width="1398" height="238" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1572202677195" />
-    <state width="1236" height="260" key="GridCell.Tab.0.left" timestamp="1575649103795">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1236" height="260" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1575649103795" />
-    <state width="664" height="829" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1572806701412" />
-    <state width="1398" height="238" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1572202677194" />
-    <state width="1236" height="260" key="GridCell.Tab.0.right" timestamp="1575649103795">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1236" height="260" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1575649103795" />
-    <state width="664" height="829" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1572806701413" />
-    <state width="1398" height="238" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1572202677195" />
-    <state width="1236" height="260" key="GridCell.Tab.1.bottom" timestamp="1575649103795">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1236" height="260" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1575649103795" />
-    <state width="664" height="829" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1572806701415" />
-    <state width="755" height="784" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1572202663303" />
-    <state width="1236" height="260" key="GridCell.Tab.1.center" timestamp="1575649103795">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1236" height="260" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1575649103795" />
-    <state width="664" height="829" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1572806701415" />
-    <state width="755" height="784" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1572202663303" />
-    <state width="1236" height="260" key="GridCell.Tab.1.left" timestamp="1575649103795">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1236" height="260" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1575649103795" />
-    <state width="664" height="829" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1572806701414" />
-    <state width="755" height="784" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1572202663303" />
-    <state width="1236" height="260" key="GridCell.Tab.1.right" timestamp="1575649103795">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1236" height="260" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1575649103795" />
-    <state width="664" height="829" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1572806701415" />
-    <state width="755" height="784" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1572202663303" />
-    <state x="335" y="168" key="RollbackChangesDialog" timestamp="1572086607201">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="335" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1572086607201" />
-    <state x="196" y="5" key="SettingsEditor" timestamp="1575635430620">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="196" y="5" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1575635430620" />
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1572005967516" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1572802617129">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="500" height="445" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1572802617129" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1572070256726">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1572070256726" />
-    <state width="809" height="450" key="XDebugger.FullValuePopup" timestamp="1572800273509">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="809" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1572800273509" />
-    <state width="809" height="450" key="XDebugger.FullValuePopup/0.23.1440.877@0.23.1440.877" timestamp="1572028135517" />
-    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1572070060735">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1572070060735" />
-    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1572070060735">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1572070060735" />
-    <state x="269" y="193" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1571829361305">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="269" y="193" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" timestamp="1571829361305" />
-    <state width="600" height="424" key="javadoc.popup" timestamp="1572074464319">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="600" height="424" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1572074464319" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1572798703474">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1572798703474" />
+    <state x="320" y="115" width="800" height="717" key="#Intentions" />
+    <state x="320" y="115" width="800" height="717" key="#Intentions/0.0.1440.900@0.0.1440.900" />
+    <state x="191" y="30" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
+    <state x="191" y="30" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" />
+    <state x="365" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" />
+    <state x="442" y="260" key="#com.intellij.fileTypes.FileTypeChooser" />
+    <state x="442" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" />
+    <state x="502" y="210" key="#xdebugger.XInspectDialog" />
+    <state x="502" y="210" key="#xdebugger.XInspectDialog/0.0.1440.900@0.0.1440.900" />
+    <state width="1171" height="373" key="DebuggerActiveHint" />
+    <state width="1171" height="373" key="DebuggerActiveHint/0.0.1280.720@0.0.1280.720" />
+    <state width="1317" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" />
+    <state x="474" y="222" key="EnvironmentVariablesDialog" />
+    <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" />
+    <state width="1236" height="260" key="GridCell.Tab.0.bottom" />
+    <state width="1236" height="260" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" />
+    <state width="664" height="829" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" />
+    <state width="1398" height="238" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" />
+    <state width="1236" height="260" key="GridCell.Tab.0.center" />
+    <state width="1236" height="260" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" />
+    <state width="664" height="829" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" />
+    <state width="1398" height="238" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" />
+    <state width="1236" height="260" key="GridCell.Tab.0.left" />
+    <state width="1236" height="260" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" />
+    <state width="664" height="829" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" />
+    <state width="1398" height="238" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" />
+    <state width="1236" height="260" key="GridCell.Tab.0.right" />
+    <state width="1236" height="260" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" />
+    <state width="664" height="829" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" />
+    <state width="1398" height="238" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" />
+    <state width="1236" height="260" key="GridCell.Tab.1.bottom" />
+    <state width="1236" height="260" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" />
+    <state width="664" height="829" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" />
+    <state width="755" height="784" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" />
+    <state width="1236" height="260" key="GridCell.Tab.1.center" />
+    <state width="1236" height="260" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" />
+    <state width="664" height="829" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" />
+    <state width="755" height="784" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" />
+    <state width="1236" height="260" key="GridCell.Tab.1.left" />
+    <state width="1236" height="260" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" />
+    <state width="664" height="829" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" />
+    <state width="755" height="784" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" />
+    <state width="1236" height="260" key="GridCell.Tab.1.right" />
+    <state width="1236" height="260" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" />
+    <state width="664" height="829" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" />
+    <state width="755" height="784" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" />
+    <state x="335" y="168" key="RollbackChangesDialog" />
+    <state x="335" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" />
+    <state x="196" y="5" key="SettingsEditor" />
+    <state x="196" y="5" key="SettingsEditor/0.0.1280.720@0.0.1280.720" />
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" />
+    <state width="500" height="445" key="SwitcherDM" />
+    <state width="500" height="445" key="SwitcherDM/0.0.1440.900@0.0.1440.900" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" />
+    <state width="809" height="450" key="XDebugger.FullValuePopup" />
+    <state width="809" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" />
+    <state width="809" height="450" key="XDebugger.FullValuePopup/0.23.1440.877@0.23.1440.877" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1440.900@0.0.1440.900" />
+    <state x="269" y="193" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" />
+    <state x="269" y="193" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" />
+    <state width="600" height="424" key="javadoc.popup" />
+    <state width="600" height="424" key="javadoc.popup/0.0.1440.900@0.0.1440.900" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/osm_simple_nav.rb</url>
-          <line>10</line>
+          <line>141</line>
           <properties a="-1">
             <option name="block-ordinal" value="-1" />
           </properties>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/osm_simple_nav.rb</url>
+          <line>142</line>
+          <properties a="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/lib/visual_graph.rb</url>
-          <line>130</line>
+          <line>27</line>
           <properties a="-1">
             <option name="block-ordinal" value="-1" />
           </properties>
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/graph_shortest_path.rb</url>
-          <line>40</line>
+          <url>file://$PROJECT_DIR$/lib/visual_graph.rb</url>
+          <line>127</line>
           <properties a="-1">
             <option name="block-ordinal" value="-1" />
           </properties>
-          <option name="timeStamp" value="41" />
+          <option name="timeStamp" value="252" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/graph_shortest_path.rb</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/lib/visual_graph.rb</url>
+          <line>150</line>
           <properties a="-1">
             <option name="block-ordinal" value="-1" />
           </properties>
-          <option name="timeStamp" value="44" />
+          <option name="timeStamp" value="254" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -354,7 +319,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/gal_template_project@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1575923540675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
+    <SUITE FILE_PATH="coverage/gal_template_project@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1576534220753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
     <SUITE FILE_PATH="coverage/NavigationOSM@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1575649088606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
   </component>
 </project>

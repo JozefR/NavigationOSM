@@ -5,7 +5,7 @@ class VisualVertex
   # Corresponding vertex
   attr_reader :vertex
   # Parent vertex for shortest path
-  attr_reader :parentVertex
+  attr_accessor :parentVertex
   # Lattitude of visual vertex
   attr_reader :lat
   # Longitute of visual vertex
@@ -15,7 +15,7 @@ class VisualVertex
   # Y-axis position of +self+
   attr_reader :y
   # relaxed path value
-  attr_writer :pathValue
+  attr_accessor :pathValue
 
   INFINITY = 99999
 

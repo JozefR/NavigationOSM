@@ -1,9 +1,9 @@
 # Class representing visual representation of edge
 class VisualEdge
   # Starting +VisualVertex+ of this visual edge
-  attr_reader :v1
+  attr_accessor :v1
   # Target +VisualVertex+ of this visual edge
-  attr_reader :v2
+  attr_accessor :v2
   # Corresponding edge in the graph
   attr_reader :edge
   # Boolean value given directness

@@ -52,7 +52,7 @@ class VisualGraph
   end
 
   # Export +self+ into Graphviz file given by +export_filename+.
-  def export_graphviz(export_filename, id_start, id_end)
+  def export_graphviz1(export_filename, id_start, id_end)
     # create GraphViz object from ruby-graphviz package
     graph_viz_output = GraphViz.new( :G,
                                      use: :neato,
@@ -118,19 +118,23 @@ class VisualGraph
                                   :pos => "#{v.y},#{v.x}!")
     }
 
+    filterEdges = {}
     # append all vertices
     visual_edges.each { |edge|
-      latStart = lat_start.to_f
-      lonStart = lon_start.to_f
       latEnd = lat_end.to_f
       lonEnd = lon_end.to_f
 
-      # 50.0865517
-      # 14.4625145
-      if ((lat_start.to_f == edge.v1.lat and lonStart == edge.v1.lon) or (latEnd == edge.v2.lat and lonEnd == edge.v2.lon))
-        graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none', 'color' => 'red', 'penwidth' => '4' )
-      else
-        graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none')
+      if latEnd == edge.v2.lat and lonEnd == edge.v2.lon
+        if ((filterEdges[edge.v1.id] != edge.v2.id) and (filterEdges[edge.v2.id] != edge.v1.id))
+          graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none')
+        end
+        print_path(graph_viz_output, edge.v2.parentVertex, filterEdges)
+      end
+    }
+
+    visual_edges.each { |edge|
+      if ((filterEdges[edge.v1.id] != edge.v2.id) and (filterEdges[edge.v2.id] != edge.v1.id))
+        graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none' )
       end
     }
 
@@ -141,6 +145,20 @@ class VisualGraph
     # export to a given format
     format_sym = export_filename.slice(export_filename.rindex('.')+1,export_filename.size).to_sym
     graph_viz_output.output( format_sym => export_filename )
+  end
+
+  def print_path(graphViz, edge, filterEdges)
+    if ((filterEdges[edge.v1.id] != edge.v2.id) and (filterEdges[edge.v2.id] != edge.v1.id))
+      filterEdges[edge.v1.id] = edge.v2.id
+      filterEdges[edge.v2.id] = edge.v1.id
+      graphViz.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none', 'color' => 'red')
+    else
+      test = 2
+    end
+
+    if (edge.v1.parentVertex != nil)
+      return print_path(graphViz, edge.v1.parentVertex, filterEdges)
+    end
   end
 
   def print_nodes()

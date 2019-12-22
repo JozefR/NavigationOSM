@@ -3,6 +3,14 @@ require_relative 'lib/graph_comp_finder';
 require_relative 'lib/graph_shortest_path';
 require_relative 'process_logger';
 
+# osm_simple_nav.rb --load-comp data/near_ucl.osm --show-nodes
+# osm_simple_nav.rb --load-comp <input_map.IN> --show-nodes <id_start> <id_stop> <exported_map.OUT>
+# osm_simple_nav.rb --load-comp data/near_ucl.osm --show-nodes 21311324 21311332 data/test.pdf
+
+# ruby osm2graphviz.rb --load-comp data/near_ucl.osm --midist 50.0865517 14.4625145 50.0878413 14.4658805 data/test.pdf
+# ruby osm2graphviz.rb --load-comp data/near_ucl.osm --midist 50.0865517 14.4625145 50.0878413 14.4658805 data/test.pdf
+# ruby osm2graphviz.rb --load-comp data/old_town.osm --midist 50.0861841 14.4344994 50.0917873 14.4346657 data/test.pdf
+
 # Class representing simple navigation based on OpenStreetMap project
 class OSM2graphviz
 
@@ -97,7 +105,7 @@ class OSM2graphviz
 
   def find_shortest_path
     shortest_path = ShortestPath.new()
-    @visual_graph = shortest_path.get_path(@graph, @visual_graph, @lat_start, @lon_start, @lat_end, @lon_end)
+    @graph, @visual_graph = shortest_path.get_path(@graph, @visual_graph, @lat_start, @lon_start, @lat_end, @lon_end)
   end
 
   def run

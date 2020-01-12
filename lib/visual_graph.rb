@@ -51,8 +51,47 @@ class VisualGraph
     graph_viz_output.output( format_sym => export_filename )
   end
 
+  def export_graphviz_edges(export_filename, lat_start, lon_start, lat_end, lon_end)
+    # create GraphViz object from ruby-graphviz package
+    graph_viz_output = GraphViz.new( :G,
+                                     use: :neato,
+                                     truecolor: true,
+                                     inputscale: @scale,
+                                     margin: 0,
+                                     bb: "#{@bounds[:minlon]},#{@bounds[:minlat]},
+                                  		    #{@bounds[:maxlon]},#{@bounds[:maxlat]}",
+                                     outputorder: :nodesfirst)
+
+    # append all vertices
+    @visual_vertices.each { |k,v|
+      graph_viz_output.add_nodes( v.id , :shape => 'point',
+                                  :comment => "#{v.lat},#{v.lon}!!",
+                                  :pos => "#{v.y},#{v.x}!")
+    }
+
+    # append all edges
+    @visual_edges.each { |edge|
+      # lat_start.to_f == edge.v2.lat and lon_start.to_f == edge.v2.lon
+      if lat_end.to_f == edge.v2.lat and lon_end.to_f == edge.v2.lon
+        graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none', 'color' => 'red')
+      elsif lat_end.to_f == edge.v1.lat and lon_end.to_f == edge.v1.lon
+        graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none', 'color' => 'red' )
+      elsif lat_start.to_f == edge.v1.lat and lon_start.to_f == edge.v1.lon
+        graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none', 'color' => 'red' )
+      elsif lat_start.to_f == edge.v2.lat and lon_start.to_f == edge.v2.lon
+        graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none', 'color' => 'red' )
+      else
+        graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none' )
+      end
+    }
+
+    # export to a given format
+    format_sym = export_filename.slice(export_filename.rindex('.')+1,export_filename.size).to_sym
+    graph_viz_output.output( format_sym => export_filename )
+  end
+
   # Export +self+ into Graphviz file given by +export_filename+.
-  def export_graphviz1(export_filename, id_start, id_end)
+  def export_graphviz_nodes(export_filename, id_start, id_end)
     # create GraphViz object from ruby-graphviz package
     graph_viz_output = GraphViz.new( :G,
                                      use: :neato,

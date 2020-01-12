@@ -3,13 +3,16 @@ require_relative 'lib/graph_comp_finder';
 require_relative 'lib/graph_shortest_path';
 require_relative 'process_logger';
 
-# osm_simple_nav.rb --load-comp data/near_ucl.osm --show-nodes
+# osm_simple_nav.rb --load-comp data/old_town.osm --show-nodes
 # osm_simple_nav.rb --load-comp <input_map.IN> --show-nodes <id_start> <id_stop> <exported_map.OUT>
-# osm_simple_nav.rb --load-comp data/near_ucl.osm --show-nodes 21311324 21311332 data/test.pdf
+# osm_simple_nav.rb --load-comp data/near_ucl.osm --show-nodes 4883181738 5790159884 data/test.pdf
 
-# ruby osm2graphviz.rb --load-comp data/near_ucl.osm --midist 50.0865517 14.4625145 50.0878413 14.4658805 data/test.pdf
-# ruby osm2graphviz.rb --load-comp data/near_ucl.osm --midist 50.0865517 14.4625145 50.0878413 14.4658805 data/test.pdf
+# ruby osm2graphviz.rb --load-comp data/near_ucl.osm --show-nodes 50.087472, 14.4639902 50.0863163, 14.4591082 data/test.pdf
+# ruby osm2graphviz.rb --load-comp data/near_ucl.osm --midist 50.087472, 14.4639902 50.0863163, 14.4591082 data/test.pdf
+# ruby osm2graphviz.rb --load-comp data/near_ucl.osm --midist 50.0894357 14.4548421 50.0888219 14.4608849 data/test.pdf
 # ruby osm2graphviz.rb --load-comp data/old_town.osm --midist 50.0861841 14.4344994 50.0917873 14.4346657 data/test.pdf
+
+#  50.0894357 14.4548421 50.0888219 14.4608849
 
 # Class representing simple navigation based on OpenStreetMap project
 class OSM2graphviz
@@ -18,7 +21,7 @@ class OSM2graphviz
   def initialize
     # register
     @load_cmds_list = ['--load-comp', ]
-    @actions_list = ['--midist']
+    @actions_list = ['--midist', '--show-nodes']
 
     @usage_text = <<-END.gsub(/^ {6}/, '')
 	  	Usage:\truby osm_simple_nav.rb <load_command> <input.IN> <action_command> <output.OUT> 
@@ -142,6 +145,8 @@ class OSM2graphviz
 
     # perform the operation
     case @operation
+    when '--show-nodes'
+        @visual_graph.export_graphviz_edges(@out_file, @lat_start, @lon_start, @lat_end, @lon_end)
     when '--midist'
         find_shortest_path
         @visual_graph.export_graphviz(@out_file, @lat_start, @lon_start, @lat_end, @lon_end)

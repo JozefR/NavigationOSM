@@ -140,7 +140,7 @@ class OSMSimpleNav
 			return
 		when '--show-nodes'
 			if @id_start != nil && @id_end != nil
-				@visual_graph.export_graphviz1(@out_file, @id_start, @id_end)
+				@visual_graph.export_graphviz_nodes(@out_file, @id_start, @id_end)
 				@visual_graph.print_nodes()
 			else
 				@visual_graph.print_nodes()

@@ -4,8 +4,7 @@ require_relative 'lib/graph_shortest_path';
 require_relative 'process_logger';
 
 # osm_simple_nav.rb --load-comp data/old_town.osm --show-nodes
-# osm_simple_nav.rb --load-comp <input_map.IN> --show-nodes <id_start> <id_stop> <exported_map.OUT>
-# osm_simple_nav.rb --load-comp data/near_ucl.osm --show-nodes 4883181738 5790159884 data/test.pdf
+# osm_simple_nav.rb --load-comp data/near_ucl.osm --show-nodes 304321909 3509790192 data/test.pdf
 
 # ruby osm2graphviz.rb --load-comp data/near_ucl.osm --show-nodes 50.087472, 14.4639902 50.0863163, 14.4591082 data/test.pdf
 # ruby osm2graphviz.rb --load-comp data/near_ucl.osm --midist 50.087472, 14.4639902 50.0863163, 14.4591082 data/test.pdf

@@ -152,13 +152,25 @@ class VisualGraph
 
     # append all vertices
     @visual_vertices.each { |k,v|
-      graph_viz_output.add_nodes( v.id , :shape => 'point',
-                                  :comment => "#{v.lat},#{v.lon}!!",
-                                  :pos => "#{v.y},#{v.x}!")
+      # lat_start, lon_start, lat_end, lon_end,
+      if (lat_start == v.lat && lon_start == v.lon || lat_end == v.lat && lon_end == v.lon)
+        graph_viz_output.add_nodes( v.id ,
+                                    :shape => 'point',
+                                    :color => 'red',
+                                    :width => '0.2',
+                                    :comment => "#{v.lat},#{v.lon}!!",
+                                    :pos => "#{v.y},#{v.x}!")
+      else
+        graph_viz_output.add_nodes( v.id ,
+                                    :shape => 'point',
+                                    :comment => "#{v.lat},#{v.lon}!!",
+                                    :pos => "#{v.y},#{v.x}!")
+      end
     }
 
     # append all vertices
     @visual_edges.each { |edge|
+
       if shortestPath.include?(edge.v1.id) and shortestPath.include?(edge.v2.id)
         graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none', 'color' => 'red')
       else

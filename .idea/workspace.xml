@@ -4,8 +4,6 @@
     <list default="true" id="4ea8f59f-864b-429a-b854-a0fe06000d5a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/test.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/test.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/edge.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/edge.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/graph_shortest_path.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/graph_shortest_path.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/visual_graph.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/visual_graph.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/logfile.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/osm2graphviz.rb" beforeDir="false" afterPath="$PROJECT_DIR$/osm2graphviz.rb" afterDir="false" />
@@ -153,7 +151,7 @@
       <workItem from="1577979326462" duration="51000" />
       <workItem from="1578674204791" duration="59000" />
       <workItem from="1578829118514" duration="12351000" />
-      <workItem from="1581160166383" duration="18101000" />
+      <workItem from="1581160166383" duration="19402000" />
     </task>
     <task id="LOCAL-00001" summary="xml">
       <created>1572070144205</created>
@@ -222,53 +220,53 @@
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577979376657" />
     <state x="474" y="222" key="EnvironmentVariablesDialog" timestamp="1577979334958" />
     <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1577979334958" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1581184068948">
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1581185320008">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1236" height="260" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1577979334958" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581184068948" />
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581185320008" />
     <state width="1398" height="238" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1577979334958" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1581184068947">
+    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1581185320005">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1236" height="260" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1577979334958" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581184068947" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581185320005" />
     <state width="1398" height="238" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1577979334958" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1581184068946">
+    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1581185320004">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1236" height="260" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1577979334958" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581184068946" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581185320004" />
     <state width="1398" height="238" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1577979334958" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1581184068947">
+    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1581185320007">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1236" height="260" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1577979334958" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581184068947" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581185320007" />
     <state width="1398" height="238" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1577979334958" />
-    <state width="698" height="229" key="GridCell.Tab.1.bottom" timestamp="1581183164159">
+    <state width="1398" height="229" key="GridCell.Tab.1.bottom" timestamp="1581185265492">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1236" height="260" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1577979334958" />
-    <state width="698" height="229" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581183164159" />
+    <state width="1398" height="229" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581185265492" />
     <state width="755" height="784" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1577979334958" />
-    <state width="698" height="229" key="GridCell.Tab.1.center" timestamp="1581183164157">
+    <state width="1398" height="229" key="GridCell.Tab.1.center" timestamp="1581185265490">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1236" height="260" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1577979334958" />
-    <state width="698" height="229" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1581183164157" />
+    <state width="1398" height="229" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1581185265490" />
     <state width="755" height="784" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1577979334958" />
-    <state width="698" height="229" key="GridCell.Tab.1.left" timestamp="1581183164156">
+    <state width="1398" height="229" key="GridCell.Tab.1.left" timestamp="1581185265489">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1236" height="260" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1577979334958" />
-    <state width="698" height="229" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1581183164156" />
+    <state width="1398" height="229" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1581185265489" />
     <state width="755" height="784" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1577979334958" />
-    <state width="698" height="229" key="GridCell.Tab.1.right" timestamp="1581183164158">
+    <state width="1398" height="229" key="GridCell.Tab.1.right" timestamp="1581185265491">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1236" height="260" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1577979334958" />
-    <state width="698" height="229" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1581183164158" />
+    <state width="1398" height="229" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1581185265491" />
     <state width="755" height="784" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1577979334958" />
     <state x="335" y="168" key="RollbackChangesDialog" timestamp="1577979334958" />
     <state x="335" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1577979334958" />
@@ -342,20 +340,12 @@
           <option name="timeStamp" value="350" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/osm2graphviz.rb</url>
-          <line>151</line>
+          <url>file://$PROJECT_DIR$/lib/visual_graph.rb</url>
+          <line>156</line>
           <properties myBlockOrdinal="-1">
             <option name="block-ordinal" value="-1" />
           </properties>
-          <option name="timeStamp" value="361" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/graph_shortest_path.rb</url>
-          <line>82</line>
-          <properties myBlockOrdinal="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="362" />
+          <option name="timeStamp" value="365" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -366,7 +356,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NavigationOSM@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1581184068917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
+    <SUITE FILE_PATH="coverage/NavigationOSM@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1581185267049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
     <SUITE FILE_PATH="coverage/gal_template_project@osm_simple_nav.rcov" NAME="osm_simple_nav Coverage Results" MODIFIED="1578844125871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="gal_template_project" />
   </component>
 </project>

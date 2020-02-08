@@ -108,7 +108,7 @@ class OSM2graphviz
 
   def find_shortest_path
     shortest_path = ShortestPath.new()
-    @graph, @visual_graph = shortest_path.get_path(@graph, @visual_graph, @lat_start, @lon_start, @lat_end, @lon_end)
+    @path = shortest_path.get_path(@graph, @visual_graph, @lat_start, @lon_start, @lat_end, @lon_end)
   end
 
   def run
@@ -148,8 +148,8 @@ class OSM2graphviz
     when '--show-nodes'
         @visual_graph.export_graphviz_edges(@out_file, @lat_start, @lon_start, @lat_end, @lon_end)
     when '--midist'
-        find_shortest_path
-        @visual_graph.export_graphviz(@out_file, @lat_start, @lon_start, @lat_end, @lon_end)
+        shortestPath = find_shortest_path
+        @visual_graph.export_graphviz_path(@out_file, @lat_start, @lon_start, @lat_end, @lon_end, shortestPath)
         @visual_graph.print_nodes()
       return
     else

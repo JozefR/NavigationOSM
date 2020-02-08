@@ -16,5 +16,6 @@ class Edge
     @max_speed = max_speed
     @one_way = one_way
   end
+
 end
 

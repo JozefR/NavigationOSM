@@ -6,84 +6,87 @@ class ShortestPath
 
     # help dictionary with key vertice and edge value
     dic = {}
+    startId = ""
+    endId = ""
 
     # initialize helper data structures
     visualGraph.visual_edges.each do |key|
-      if !dic.key?(key.v1)
-        dic[key.v1.id] = []
-        dic[key.v2.id] = []
-      end
-    end
-
-    visualGraph.visual_edges.each do |value|
-        dic[value.v1.id].push(value)
-    end
-
-    min_heap = []
-
-    # set start vertice path to zero
-    dic.each do |key, value|
-      found = false
-      value.each do |val|
-        if (val.v1.lat == latStart and val.v1.lon == lonStart)
-          val.v1.pathValue = 0
-          found = true
-          min_heap.push([key, value])
-          next
+      if key != nil
+        if dic[key.v1.id] == nil
+          dic[key.v1.id] = []
         end
-      end
-      if (found == false)
-        min_heap.push([key, value])
-      end
-    end
+        if dic[key.v2.id] == nil
+          dic[key.v2.id] = []
+        end
+        dic[key.v1.id] << key.v2
+        dic[key.v2.id] << key.v1
 
-    lastVertex = nil
-    while min_heap.length > 0
-      currentVertex = min_heap.first
-      min_heap.delete_at(0)
+        if (key.v1.lat == latStart and key.v1.lon == lonStart)
+          key.v1.pathValue = 0
+          startId = key.v1.id
+        end
 
-      currentVertex[1].each do |edge|
+        if (key.v2.lat == latStart and key.v2.lon == lonStart)
+          key.v2.pathValue = 0
+          startId = key.v2.id
+        end
 
-        currentVerPathValue = edge.v1.pathValue
-        edgeWeight = edge.weight
-        edgeToPathValue = edge.v2.pathValue
+        if (key.v1.lat == latEnd and key.v1.lon == lonEnd)
+          endId = key.v1.id
+        end
 
-        if currentVerPathValue + edgeWeight < edgeToPathValue
-          edge.v2.pathValue = currentVerPathValue + edgeWeight
-          edge.v2.parentVertex = edge
-          lastVertex = edge
-
-          cnt = 0
-          found = false
-          min_heap.each do |heapEdge|
-            if heapEdge[0] == edge.v2.id
-              priorityQueue = min_heap[cnt]
-              min_heap.delete_at(cnt)
-              min_heap.insert(0, priorityQueue)
-              found = true
-            end
-            cnt += 1
-          end
-
-          cnt2 = 0
-          if found == false
-            min_heap.each do |heapEdge|
-              test = heapEdge[1]
-              test.each do |v|
-                if v.v2.id == edge.v2.id
-                  priorityQueue = min_heap[cnt2]
-                  min_heap.delete_at(cnt2)
-                  min_heap.insert(0, priorityQueue)
-                end
-              end
-              cnt2 += 1
-            end
-          end
-
+        if (key.v2.lat == latEnd and key.v2.lon == lonEnd)
+          endId = key.v2.id
         end
       end
     end
 
-    return graph, visualGraph
+    # A ← graf.vrcholy
+    needToVisit = graph.vertices.map {|k,v| k};
+    # Graf vrcholy
+    vertexes = {}
+    graph.vertices.each { |key, value|
+      vertexes[key] = 999999;
+    }
+    # start path
+    vertexes[startId] = 0;
+    s = {}
+    path = []
+    while needToVisit.length > 0
+      # m ← min(A.seber { |v| d[v] })
+      minimum = needToVisit.map { |v| vertexes[v] }.min
+      # N ← A.vyber { |v| d[v] == m }
+      n = needToVisit.select {|v| vertexes[v] == minimum }[0];
+      # A ← A – N
+      needToVisit.delete(n);
+      # for {u, v} in (N × A) ∩ graf.hrany
+      dic[n].each do |neighbour|
+        currentWeight = 0
+
+        # d[v] ← min(d[v], d[u] + w({u, v}))
+        visualGraph.visual_edges.each do |edge|
+          if (edge.v1.id == n && edge.v2.id == neighbour.id || edge.v1.id == neighbour.id && edge.v2.id == n)
+            currentWeight = vertexes[n] + edge.weight
+            break
+          end
+        end
+
+        if currentWeight < vertexes[neighbour.id]
+          vertexes[neighbour.id] = currentWeight
+          s[neighbour.id] = n;
+        end
+      end
+    end
+
+    u = endId
+    s.each do |key, value|
+      if key = u
+        path.insert(0, u)
+        u = s[u]
+      end
+    end
+    path.insert(0, endId)
+
+    return path
   end
 end

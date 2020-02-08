@@ -139,7 +139,7 @@ class VisualGraph
   end
 
   # Export +self+ into Graphviz file given by +export_filename+.
-  def export_graphviz(export_filename, lat_start, lon_start, lat_end, lon_end)
+  def export_graphviz_path(export_filename, lat_start, lon_start, lat_end, lon_end, shortestPath)
     # create GraphViz object from ruby-graphviz package
     graph_viz_output = GraphViz.new( :G,
                                      use: :neato,
@@ -157,29 +157,17 @@ class VisualGraph
                                   :pos => "#{v.y},#{v.x}!")
     }
 
-    filterEdges = {}
     # append all vertices
-    visual_edges.each { |edge|
-      latEnd = lat_end.to_f
-      lonEnd = lon_end.to_f
-
-      if latEnd == edge.v2.lat and lonEnd == edge.v2.lon
-        if ((filterEdges[edge.v1.id] != edge.v2.id) and (filterEdges[edge.v2.id] != edge.v1.id))
-          graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none')
-        end
-        print_path(graph_viz_output, edge.v2.parentVertex, filterEdges)
-      end
-    }
-
-    visual_edges.each { |edge|
-      if ((filterEdges[edge.v1.id] != edge.v2.id) and (filterEdges[edge.v2.id] != edge.v1.id))
-        graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none' )
+    @visual_edges.each { |edge|
+      if shortestPath.include?(edge.v1.id) and shortestPath.include?(edge.v2.id)
+        graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none', 'color' => 'red')
+      else
+        graph_viz_output.add_edges( edge.v1.id, edge.v2.id, 'arrowhead' => 'none', 'color' => 'black')
       end
     }
 
     # Process dijkstra for starting vertex
     # After finishing find finish vertex and go throught parent vertices to start
-    
 
     # export to a given format
     format_sym = export_filename.slice(export_filename.rindex('.')+1,export_filename.size).to_sym
